@@ -1,0 +1,19 @@
+@import "tailwindcss";
+.App {
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
