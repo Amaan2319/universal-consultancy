@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+
+import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,7 +8,9 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold text-gray-800">Universal Consultants</h1>
+        <h1 className="text-2xl font-bold text-gray-800">
+          Universal Consultants
+        </h1>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
@@ -30,7 +33,11 @@ const Header = () => {
           className="md:hidden text-gray-700"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          {menuOpen ? (
+            <XMarkIcon className="h-7 w-7" />
+          ) : (
+            <Bars3Icon className="h-7 w-7" />
+          )}
         </button>
       </div>
 
@@ -58,3 +65,7 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
