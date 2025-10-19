@@ -25,7 +25,7 @@ const Hero = () => {
           href="#services"
           className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-full font-semibold"
         >
-          Explore Services
+          Explore Services.
         </a>
       </div>
     </section>
