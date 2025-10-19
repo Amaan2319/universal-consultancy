@@ -1,4 +1,5 @@
 import React from "react";
+import heroBg from "../assets/hero-bg.png";
 
 const Hero = () => {
   return (
@@ -6,8 +7,7 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-6"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1607082349566-187342e45ca8?auto=format&fit=crop&w=1400&q=80')",
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
